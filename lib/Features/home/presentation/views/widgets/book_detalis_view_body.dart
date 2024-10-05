@@ -1,3 +1,4 @@
+import 'package:bookly/Features/home/presentation/views/widgets/book_rating.dart';
 import 'package:bookly/Features/home/presentation/views/widgets/custom_book_detalis_app_bar.dart';
 import 'package:bookly/Features/home/presentation/views/widgets/custom_book_image.dart';
 import 'package:bookly/core/utils/styles.dart';
@@ -14,6 +15,9 @@ class BookDetalisViewBody extends StatelessWidget {
       child: Column(
         children: [
           const CustomBookDetaAppBar(),
+          const SizedBox(
+            height: 36,
+          ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: width * .2),
             child: const CustomBookImage(),
@@ -34,6 +38,12 @@ class BookDetalisViewBody extends StatelessWidget {
               'Rudyard Kipling',
               style: Styles.textStyle18,
             ),
+          ),
+          const SizedBox(
+            height: 14,
+          ),
+          const BookRating(
+            mainAxisAlignment: MainAxisAlignment.center,
           )
         ],
       ),
