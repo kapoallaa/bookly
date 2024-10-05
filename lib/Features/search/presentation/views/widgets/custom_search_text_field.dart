@@ -17,6 +17,7 @@ class CustomSearchTextField extends StatelessWidget {
               onPressed: () {},
               icon: const Icon(
                 FontAwesomeIcons.magnifyingGlass,
+                size: 18,
               ),
             )),
       ),
